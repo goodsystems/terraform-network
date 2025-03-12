@@ -1,0 +1,20 @@
+name: terraform-network
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+  push:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  call-workflow:
+    uses: goodsystems/terraform-reusable-workflows/.github/workflows/terraform-reusable-workflow.yml@v1
+    with:
+      project: "terraform-network"
+
+    secrets:
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
