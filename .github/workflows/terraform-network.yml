@@ -12,9 +12,6 @@ permissions:
 
 jobs:
   call-workflow:
-    uses: goodsystems/terraform-reusable-workflows/.github/workflows/terraform-reusable-workflow.yml@v1
+    uses: goodsystems/terraform-reusable-workflows/.github/workflows/terraform-reusable-workflow.yml@v2
     with:
       project: "terraform-network"
-
-    secrets:
-      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
