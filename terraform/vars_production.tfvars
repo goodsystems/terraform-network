@@ -1,4 +1,5 @@
-env_type                = "production"
+environment_name        = "production"
+environment_slug        = "prd"
 name                    = "Production"
 cidr_block              = "172.31.0.0/16"
 azs                     = ["us-east-1a", "us-east-1b", "us-east-1d"]

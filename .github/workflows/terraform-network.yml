@@ -12,6 +12,6 @@ permissions:
 
 jobs:
   call-workflow:
-    uses: goodsystems/terraform-reusable-workflows/.github/workflows/terraform-reusable-workflow.yml@v2
+    uses: goodsystems/reusable-workflows-terraform-aws/.github/workflows/reusable-workflows-terraform-aws.yml@v3
     with:
       project: "terraform-network"

@@ -14,9 +14,10 @@ provider "aws" {
 
   default_tags {
     tags = {
-      "Environment" = var.env_type,
-      "Project"     = "terraform-network",
-      "ManagedBy"   = "Terraform"
+      "Environment_name" = var.environment_name,
+      "Environment_slug" = var.environment_slug,
+      "Project"          = var.project,
+      "ManagedBy"        = "Terraform"
     }
   }
 }

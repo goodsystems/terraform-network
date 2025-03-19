@@ -3,8 +3,16 @@ variable "region" {
   description = "default region"
 }
 
-variable "env_type" {
+variable "environment_name" {
   description = "default environment type"
+}
+
+variable "environment_slug" {
+  description = "default environment slug"
+}
+
+variable "project" {
+  description = "default project name"
 }
 
 variable "name" {
