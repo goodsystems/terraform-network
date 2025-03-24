@@ -1,7 +1,7 @@
 #default ls vpc settings for us-east-1 oldest account 
 module "vpc" {
-  source  = "aws-ia/vpc/aws"
-  version = "4.4.4"
+  source  = "registry.opentofu.org/aws-ia/vpc/aws"
+  version = "v4.4.4"
 
   name                                 = var.name
   cidr_block                           = var.cidr_block
