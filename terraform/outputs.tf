@@ -5,3 +5,7 @@ output "vpc_id" {
 output "private_subnets_id" {
   value = [for subnet in module.vpc.private_subnet_attributes_by_az : subnet.id]
 }
+
+output "public_subnets_id" {
+  value = [for subnet in module.vpc.public_subnet_attributes_by_az : subnet.id]
+}
