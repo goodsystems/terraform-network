@@ -2,7 +2,7 @@ name: terraform-network
 
 on:
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '0 8 * * *'
   workflow_dispatch:
   push:
 
@@ -12,6 +12,6 @@ permissions:
 
 jobs:
   call-workflow:
-    uses: goodsystems/reusable-workflows-terraform-aws/.github/workflows/reusable-workflows-terraform-aws.yml@opentofu
+    uses: goodsystems/reusable-workflows-terraform-aws/.github/workflows/reusable-workflows-terraform-aws.yml@v5
     with:
       project: "terraform-network"
